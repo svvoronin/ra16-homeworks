@@ -1,0 +1,43 @@
+.cardContainer {
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background-color: #f5f5f5;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.color {
+  color: gray;
+  font-size: 22px;
+  text-align: center;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.price {
+  color: rgb(207, 19, 19);
+  font-size: 25px;
+}
+
+.addBtn {
+  color: rgb(207, 19, 19);
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid rgb(207, 19, 19);
+  border-radius: 10px;
+}
