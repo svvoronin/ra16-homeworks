@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #3a62cf;
+}
+
+/* Layout */
+/* .layout-wrapper {
+  width: 100%;
+  min-height: 100vh;
+}*/
+.layout {
+  width: 100%;
+  padding: 20px 200px;
+  min-height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Card */
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 300px;
+
+  overflow: hidden;
+  min-height: 100%;
+  border: 1px solid grey;
+  border-radius: 12px;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  gap: 20px;
+}
+.card-image {
+  width: 100%;
+  height: calc(300px * 0.6);
+  background: grey;
+  display: flex;
+}
+.card-image img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+/* Task 2 Yandex */
+
+/* Newsblock */
+.news-wrapper {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+.news-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.news-menu span {
+  color: var(--main-color);
+  cursor: pointer;
+}
+.news-items {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.news-course {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  gap: 30px;
+}
+
+/* Searchblock */
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+.button {
+  background-color: #f5f5f5;
+  border: none;
+  color: #707070;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  outline: none;
+}
+.button:hover {
+  border: 1px solid #c8c8c8;
+  padding: 9px 19px;
+  color: #808080;
+}
+.button:focus {
+  border: 1px solid #4885ed;
+  padding: 9px 19px;
+}
+
+.bar {
+  margin: 0 auto;
+  width: 575px;
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+}
+.bar:hover {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline: none;
+}
+.searchbar {
+  height: 45px;
+  border: none;
+  width: 500px;
+  font-size: 16px;
+  outline: none;
+}
+.voice {
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+/* Banner block */
+
+.banner {
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+}
+.banner a img {
+  width: 80%;
+  height: 100%;
+}
+
+/* Other Block */
+
+.other-block-wrapper {
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.other-block-content-wrapper {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.other-block-content-title {
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+}
